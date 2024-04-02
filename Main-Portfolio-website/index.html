@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ryan's Portfolio</title>
+    <script src="https://kit.fontawesome.com/764aa81b8d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--------------Header----------------->
+    <div id="header-section">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li>
+                        <a href="#header-section">Home</a>
+                    </li>
+                    <li><a href="#about-section">About</a>
+                    </li>
+                    <li>
+                        <a href="#project-section">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#service-section">Services</a>
+                    </li>
+                    <li>
+                        <a href="#contact-section">Contact</a>
+                    </li>
+                    <i class="fa-solid fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="headertext">
+                <p>Systems Development</p>
+                <h1>Hi , I am <br><span> Vuyani Ryan </span> </h1>
+            </div>
+        </div>
+    </div>
+
+    <!--------------about-section----------------->
+    <div id="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About me</h1>
+                    <p>Motivated final-year student specializing in system development.
+                        Seeking a team-oriented environment to apply technical skills, enhance leadership abilities, and contribute effectively
+                        Eager to take on challenges, learn, and grow in a dynamic professional setting.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>Programming Languages</span><br>Java & Kotlin
+                            </li>
+                            <li>
+                                <span>Web Development</span><br>HTML, CSS, JavaScript, ReactJS
+                            </li>
+                            <li>
+                                <span>Database</span><br>SQL
+                            </li>
+                            <li>
+                                <span>Software Tool</span><br>VS code, Netbeans, Android Studio & Eclipse
+                            </li>
+                            <li>
+                                <span>Graphic Design Tools</span><br>Adobe Photoshop
+                            </li>
+                            <li>
+                                <span>UI/UX Conversion</span><br>
+                            </li>
+                            <li>
+                                <span>Problem Solving</span><br>
+                            </li>
+                            <li>
+                                <span>Teamwork</span><br>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span></span><br>SSC
+                            <li style="font-size: 14px;"></li>
+                            </li>
+                            <li>
+                                <span>
+                        
+                                </span><br>
+                            <li style="font-size: 14px;"></li>
+                            </li>
+                            <li>
+                                <span>2023</span><br> Diploma In Systems Development
+                            <li style="font-size: 14px;"> Boston City campus & business College</li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+    <!--------------service-section----------------->
+    <div id="service-section">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>Web Design</h2>
+                    <p>Web design is the art and science of creating visually appealing and user-friendly websites. It
+                        involves using graphic design, layout, color theory, and typography to craft an engaging user
+                        experience. Web designers must consider usability, accessibility, and responsiveness, ensuring
+                        websites look and function well across various devices and browsers.</p>
+                    <a href="https://www.simplilearn.com/what-is-web-designing-article#:~:text=Web%20designing%20is%20the%20process,make%20them%20easy%20to%20navigate."
+                        target="_blank">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Web development is the process of creating websites and web applications. It involves front-end
+                        development for user interfaces using HTML, CSS, and JavaScript, as well as back-end development
+                        for server-side functionality.</p>
+                    <a href="https://www.geeksforgeeks.org/web-development/" target="_blank">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Development</h2>
+                    <p>App development is the process of creating software applications for mobile devices, desktops, or
+                        the web. It encompasses design, coding, testing, and deployment. Developers use programming
+                        languages like Java, Swift, or JavaScript, and frameworks such as React Native or Flutter, to
+                        build apps that serve various purposes, from games to productivity tools. Successful app
+                        development requires user-centric design and ongoing updates to meet evolving user needs and
+                        technical requirements.</p>
+                    <a href="https://developer.android.com/" target="_blank">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--------------contact-section----------------->
+    <div id="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> Ryanmahlaku@protonmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +27735340018</p>
+                    <div class="social-icons">
+                    
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        
+                    </div>
+                    <a href="images/Ryan    Koko  CV.pdf" download class="btn btn2 ">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Email" required>
+                        <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <!--------------Copyright----------------->
+        <div class="copyright">
+            <p>Copyright &copy; 2023 Ryan. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwqwXBjiQ8d6FWamNAK0e9nuwSlwzOXjuYROQWZr32hJJH6Vi4rN5P76c7W-2fM8RVGBA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully !"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
